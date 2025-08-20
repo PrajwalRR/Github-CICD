@@ -1,5 +1,9 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../src")))
+
+from fib import fibonacci
 import pytest
-from src.fib import fibonacci
 
 def test_fibonacci_zero():
     assert fibonacci(0) == 0
